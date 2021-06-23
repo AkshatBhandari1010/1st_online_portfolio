@@ -1,0 +1,570 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+/* font-family: 'Poppins', sans-serif; */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+.flex {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.flex > * {
+  flex: 1;
+}
+header {
+  animation: nav 0.5s ease;
+}
+.headerflex {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 15em 2em 15em;
+}
+@keyframes nav {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+header button {
+  display: none;
+}
+header h2,
+footer h2 {
+  color: #ff0a43;
+}
+header nav ul {
+  padding: 0 0 0 3em;
+}
+header nav ul li {
+  display: inline-block;
+}
+header nav ul li a {
+  color: #000;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0 45px 0 0;
+  transition: color 0.3s ease 0s;
+}
+header nav ul li a:hover {
+  color: #00efff;
+  transition: color 0.3s ease 0s;
+}
+header div ul li {
+  display: inline-block;
+}
+header div ul li a {
+  color: #000;
+  font-size: 20px;
+  margin: 0 25px 0 0;
+  text-decoration: none;
+  transition: color 0.3s ease 0s;
+}
+header div ul li a:hover {
+  color: #00efff;
+  transition: color 0.3s ease 0s;
+}
+/* ==============MOBILE MENU============ */
+.hidden-menu {
+  display: none;
+}
+.hidden-menu.show {
+  animation: down 0.3s ease;
+  background: linear-gradient(
+    170deg,
+    rgba(0, 240, 250, 1) 0%,
+    rgba(0, 255, 209, 1) 50%,
+    rgba(0, 240, 250, 1) 100%
+  );
+  display: block;
+  height: 40vh;
+  padding: 2.5em 0 0 0;
+  text-align: center;
+}
+@keyframes down {
+  from {
+    height: 0;
+  }
+  to {
+    height: 18em;
+  }
+}
+.hidden-menu ul li a {
+  color: #fff;
+  font-weight: 500;
+  list-style: none;
+  text-decoration: none;
+  transition: color 0.3s ease 0s;
+}
+.hidden-menu nav ul li a {
+  font-size: 20px;
+}
+.hidden-menu nav ul li a:hover {
+  color: #ff0a43;
+}
+.hidden-menu div {
+  padding: 1em 0 0 0;
+}
+.hidden-menu div ul li a {
+  font-size: 28px;
+}
+.hidden-menu div ul li a:hover {
+  color: #ef00ff;
+}
+.hidden-menu nav ul li {
+  margin-bottom: 20px;
+}
+.navicons ul li:nth-child(1),
+.navicons ul li:nth-child(2) {
+  margin-right: 20px;
+}
+.hidden-menu div ul li {
+  display: inline-block;
+}
+/* =============HERO SECTION============== */
+.heroSection {
+  padding: 5em 15em 0em 15em;
+  height: 80vh;
+}
+.heroContent h1 {
+  animation: heroh1 0.5s ease;
+  letter-spacing: 1px;
+  font-size: 36px;
+  padding: 0 0 0 1em;
+}
+@keyframes heroh1 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.hero-img {
+  animation: hero 0.5s ease;
+  width: 28em;
+  height: 22em;
+  padding: 0 1em 0 0;
+}
+@keyframes hero {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+/* ==================FEATURE============ */
+.feature {
+  padding: 10em 10em 10em 10em;
+}
+.feature .flex > div {
+  padding: 0 70px;
+}
+.feature img {
+  border-radius: 20px;
+  width: 100%;
+}
+.feature h4 {
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin: 0 0 -5px 0;
+}
+.feature h1 {
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 0 0 10px 0;
+}
+.feature p {
+  line-height: 26px;
+}
+/* ====================SKILL=========== */
+.skills {
+  background: linear-gradient(
+    150deg,
+    rgba(0, 239, 255, 1) 0%,
+    rgba(235, 0, 255, 1) 100%
+  );
+  padding: 7em 14.4em;
+}
+.skills .flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 3em;
+}
+.skill-box {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 15em;
+  justify-content: center;
+  padding: 40px;
+  text-align: center;
+}
+.skill-box img {
+  margin: 0 0 30px 0;
+  width: 3em;
+}
+.skill-box h1 {
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0 0 10px 0;
+}
+.skill-box p {
+  font-size: 14px;
+}
+/* =====================PROJECTS======== */
+.projects {
+  padding: 10em 10em;
+}
+.projects .flex2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.projects .flex > div {
+  padding: 0 70px;
+}
+.projects .flex {
+  margin: 0 0 50px 0;
+}
+.projects h4 {
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin: 0 0 -2px 1px;
+}
+.projects h1 {
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 34px;
+  margin: 0 0 10px 0;
+}
+.projects p {
+  line-height: 26px;
+}
+.projects img {
+  border-radius: 20px;
+  width: 100%;
+}
+/* =====================FOOTER================ */
+footer {
+  background: linear-gradient(
+    160deg,
+    rgba(245, 255, 0, 1) 0%,
+    rgba(255, 0, 0, 1) 100%
+  );
+  width: 100vw;
+}
+footer .flex {
+  align-items: center;
+}
+footer ul {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 0 20px 0;
+  padding: 2.8em 7.1em 0 0;
+}
+footer ul li {
+  list-style: none;
+}
+footer ul li:nth-child(1),
+footer ul li:nth-child(2) {
+  margin: 0 2em 0 0;
+}
+footer ul li a,
+footer p {
+  color: white;
+  text-align: right;
+}
+footer ul li a {
+  font-size: 24px;
+}
+footer ul li a:hover {
+  color: #f5ff00;
+}
+footer p {
+  font-size: 20px;
+}
+/* ========================================================================================================================================================================================== */
+@media (max-width: 1200px) {
+  header nav ul li a {
+    margin: 0 25px 0 0;
+  }
+  header div ul li a {
+    margin: 0 15px 0 0;
+  }
+}
+/* 
+================================================================= */
+@media (max-width: 1100px) {
+  .flex {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .headerflex {
+    width: 100vw;
+  }
+  header button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: block;
+    outline: none;
+  }
+  header .hamburger .open {
+    display: block;
+    height: 1.3em;
+    width: 1.8em;
+  }
+  header .hamburger.show .open {
+    display: none;
+  }
+  header .hamburger .close {
+    display: none;
+    height: 1.8em;
+    width: 1.3em;
+  }
+  header .hamburger.show .close {
+    display: block;
+  }
+  header nav,
+  header div {
+    display: none;
+  }
+  /* ==================HERO SECTION=========== */
+  .heroSection .flex {
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+  }
+  .heroSection .flex > div {
+    padding: 0 0 0 0;
+  }
+  .hero-img {
+    width: 28em;
+    height: 22em;
+  }
+  .heroSection h1 {
+    padding: 1em 0 0 0;
+    text-align: center;
+  }
+  /* ========================FEATURE=============== */
+  .feature h4,
+  .feature h1,
+  .feature p {
+    text-align: center;
+  }
+  .feature h4 {
+    margin-bottom: -2px;
+  }
+  .feature .flex div:nth-child(1) {
+    margin-bottom: 3.5em;
+    padding: 0 8em;
+  }
+  /* ==============================SKILLS=================== */
+  .skills .flex {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 3em;
+  }
+  /* ==============================PROJECTS================= */
+  .projects .flex {
+    margin-bottom: 10em;
+  }
+  .projects .flex div:nth-child(1) {
+    margin-bottom: 3.5em;
+    padding: 0 9em;
+  }
+  .projects h4,
+  .projects h1,
+  .projects p {
+    text-align: center;
+  }
+}
+/* ============FOOTER=============== */
+footer {
+  padding: 5em 0em;
+}
+footer .flex > div {
+  justify-content: center;
+  width: 100vw;
+}
+.footer-heading {
+  display: flex;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  padding: 3.5em 0 0 0;
+}
+footer ul {
+  justify-content: center;
+  padding: 0;
+}
+footer p {
+  text-align: center;
+}
+
+/* ======================================================================================================================================================================================== */
+
+@media (max-width: 901px) {
+  .headerflex {
+    padding: 2em 6em 2em 5em;
+  }
+  .heroSection {
+    padding: 5em 0 0 0;
+  }
+  .hero-img {
+    width: 80vw;
+    height: 75vh;
+  }
+  .heroSection h1 {
+    font-size: 36px;
+    width: 80vw;
+  }
+  /* ========================FEATURE=========== */
+  .feature {
+    padding: 10em 0;
+  }
+  .feature img {
+    width: 80vw;
+  }
+  .feature h4,
+  .feature h1,
+  .feature p {
+    width: 80vw;
+  }
+  /* ========================SKILLS=========== */
+  .skills {
+    padding: 5em 5em;
+  }
+  .skill-box {
+    width: 80vw;
+  }
+  /* ========================PROJECTS=========== */
+  .projects {
+    width: 100%;
+  }
+  .projects .flex {
+    width: 100vw;
+  }
+  .projects h4,
+  .projects h1,
+  .projects p {
+    width: 80vw;
+  }
+  .projects img {
+    width: 80vw;
+  }
+}
+
+/* =============================================================================== */
+
+@media (max-width: 801px) {
+  .headerflex {
+    padding: 2em 5.5em 2em 4.5em;
+  }
+  .hero-img {
+    width: 80vw;
+    height: 65vh;
+  }
+}
+
+@media (max-width: 701px) {
+  .headerflex {
+    padding: 2em 5em 2em 4em;
+  }
+  .hero-img {
+    width: 80vw;
+    height: 60vh;
+  }
+}
+
+@media (max-width: 601px) {
+  .headerflex {
+    padding: 2em 4.5em 2em 3.5em;
+  }
+  .hero-img {
+    width: 80vw;
+    height: 55vh;
+  }
+}
+
+@media (max-width: 501px) {
+  .headerflex {
+    padding: 2em 4em 2em 3em;
+  }
+  .hero-img {
+    width: 80vw;
+    height: 45vh;
+  }
+}
+
+@media (max-width: 401px) {
+  .headerflex {
+    padding: 2em 3.5em 2em 2.5em;
+  }
+  .hero-img {
+    width: 80vw;
+    height: 35vh;
+  }
+}
+
+/* ============================================================================================================== */
+
+@media (max-width: 376px) {
+  .headerflex {
+    padding: 2em 1.5em;
+  }
+  .hero-img {
+    width: 90vw;
+    height: 18em;
+  }
+  .heroSection h1 {
+    font-size: 32px;
+    width: 90vw;
+  }
+  /* ========================FEATURE=========== */
+  .feature img {
+    width: 85vw;
+  }
+  .feature h4,
+  .feature h1,
+  .feature p {
+    width: 85vw;
+  }
+  /* ========================SKILLS=========== */
+  .skills {
+    padding: 5em 1.5em;
+  }
+  .skill-box {
+    width: 85vw;
+  }
+  /* ========================PROJECTS=========== */
+  .projects h4,
+  .projects h1,
+  .projects p {
+    width: 85vw;
+  }
+  .projects img {
+    width: 85vw;
+  }
+}
