@@ -11,7 +11,9 @@ body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
-
+.con {
+  overflow-x: hidden;
+}
 .flex {
   align-items: center;
   display: flex;
@@ -231,12 +233,14 @@ header div ul li a:hover {
 /* =====================PROJECTS======== */
 .projects {
   padding: 10em 10em;
+  width: 100vw;
 }
 .projects .flex2 {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
 }
 .projects .flex > div {
   padding: 0 70px;
@@ -270,7 +274,7 @@ footer {
     rgba(245, 255, 0, 1) 0%,
     rgba(255, 0, 0, 1) 100%
   );
-  width: 100vw;
+  width: 100%;
 }
 footer .flex {
   align-items: center;
@@ -319,7 +323,7 @@ footer p {
     justify-content: center;
   }
   .headerflex {
-    width: 100vw;
+    width: 100%;
   }
   header button {
     background-color: transparent;
@@ -366,6 +370,9 @@ footer p {
     text-align: center;
   }
   /* ========================FEATURE=============== */
+  .feature-content {
+    width: 100%;
+  }
   .feature h4,
   .feature h1,
   .feature p {
@@ -378,6 +385,9 @@ footer p {
     margin-bottom: 3.5em;
     padding: 0 8em;
   }
+  .feature img {
+    width: 100%;
+  }
   /* ==============================SKILLS=================== */
   .skills .flex {
     display: grid;
@@ -388,15 +398,22 @@ footer p {
   /* ==============================PROJECTS================= */
   .projects .flex {
     margin-bottom: 10em;
+    justify-content: center;
   }
   .projects .flex div:nth-child(1) {
     margin-bottom: 3.5em;
     padding: 0 9em;
   }
+  .projects-content {
+    width: 100%;
+  }
   .projects h4,
   .projects h1,
   .projects p {
     text-align: center;
+  }
+  .projects img {
+    width: 100%;
   }
 }
 /* ============FOOTER=============== */
@@ -447,6 +464,9 @@ footer p {
   .feature img {
     width: 80vw;
   }
+  .feature .flex div:nth-child(1) {
+    padding: 0 5.5em;
+  }
   .feature h4,
   .feature h1,
   .feature p {
@@ -465,6 +485,10 @@ footer p {
   }
   .projects .flex {
     width: 100vw;
+  }
+  .projects .flex div:nth-child(1) {
+    margin-bottom: 3.5em;
+    padding: 0 5.5em;
   }
   .projects h4,
   .projects h1,
@@ -486,6 +510,10 @@ footer p {
     width: 80vw;
     height: 65vh;
   }
+  .feature .flex div:nth-child(1),
+  .projects .flex div:nth-child(1) {
+    padding: 0 5em;
+  }
 }
 
 @media (max-width: 701px) {
@@ -495,6 +523,10 @@ footer p {
   .hero-img {
     width: 80vw;
     height: 60vh;
+  }
+  .feature .flex div:nth-child(1),
+  .projects .flex div:nth-child(1) {
+    padding: 0 4.5em;
   }
 }
 
@@ -506,6 +538,10 @@ footer p {
     width: 80vw;
     height: 55vh;
   }
+  .feature .flex div:nth-child(1),
+  .projects .flex div:nth-child(1) {
+    padding: 0 4em;
+  }
 }
 
 @media (max-width: 501px) {
@@ -516,6 +552,10 @@ footer p {
     width: 80vw;
     height: 45vh;
   }
+  .feature .flex div:nth-child(1),
+  .projects .flex div:nth-child(1) {
+    padding: 0 3em;
+  }
 }
 
 @media (max-width: 401px) {
@@ -525,6 +565,10 @@ footer p {
   .hero-img {
     width: 80vw;
     height: 35vh;
+  }
+  .feature .flex div:nth-child(1),
+  .projects .flex div:nth-child(1) {
+    padding: 0 2.2em;
   }
 }
 
@@ -544,7 +588,7 @@ footer p {
   }
   /* ========================FEATURE=========== */
   .feature img {
-    width: 85vw;
+    width: 100%;
   }
   .feature h4,
   .feature h1,
@@ -565,6 +609,10 @@ footer p {
     width: 85vw;
   }
   .projects img {
-    width: 85vw;
+    width: 100%;
+  }
+  .feature .flex div:nth-child(1),
+  .projects .flex div:nth-child(1) {
+    padding: 0 1.5em;
   }
 }
