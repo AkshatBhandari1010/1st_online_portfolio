@@ -127,8 +127,7 @@ header div ul li a:hover {
 .hidden-menu nav ul li {
   margin-bottom: 20px;
 }
-.navicons ul li:nth-child(1),
-.navicons ul li:nth-child(2) {
+.navicons ul li:nth-child(1) {
   margin-right: 20px;
 }
 .hidden-menu div ul li {
@@ -139,15 +138,75 @@ header div ul li a:hover {
   padding: 5em 15em 0em 15em;
   height: 80vh;
 }
+.heroContent {
+  padding: 0 0 0 5em;
+}
 .heroContent h1 {
   animation: heroh1 0.5s ease;
   letter-spacing: 1px;
   font-size: 36px;
-  padding: 0 0 0 1em;
+  margin: 0 0 1em 0;
+  /* padding: 0 0 0 1em; */
 }
 @keyframes heroh1 {
   0% {
     transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.hero-button {
+  animation: heroButton 0.8s ease;
+  background-color: #ff0a43;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  letter-spacing: 2px;
+  outline: none;
+  padding: 1em 2em;
+  position: relative;
+}
+.hero-button::before {
+  animation: arrow 1s ease 0s infinite;
+  content: "";
+  border: solid white;
+  border-radius: 5px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  height: 20px;
+  width: 20px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  border-top: none;
+  border-left: none;
+}
+@keyframes arrow {
+  0% {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  20% {
+    transform: translate(-50%, -40%) rotate(45deg);
+  }
+  40% {
+    transform: translate(-50%, -30%) rotate(45deg);
+  }
+  60% {
+    transform: translate(-50%, -20%) rotate(45deg);
+  }
+  80% {
+    transform: translate(-50%, -30%) rotate(45deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+}
+@keyframes heroButton {
+  0% {
+    transform: translateX(300%);
   }
   100% {
     transform: translateX(0%);
@@ -294,8 +353,7 @@ footer ul {
 footer ul li {
   list-style: none;
 }
-footer ul li:nth-child(1),
-footer ul li:nth-child(2) {
+footer ul li:nth-child(1) {
   margin: 0 2em 0 0;
 }
 footer ul li a,
