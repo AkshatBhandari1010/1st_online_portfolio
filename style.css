@@ -135,8 +135,10 @@ header div ul li a:hover {
 }
 /* =============HERO SECTION============== */
 .heroSection {
-  padding: 5em 15em 0em 15em;
-  height: 80vh;
+  padding: 8em 15em 0em 15em;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: visible;
 }
 .heroContent {
   padding: 0 0 0 5em;
@@ -146,7 +148,6 @@ header div ul li a:hover {
   letter-spacing: 1px;
   font-size: 36px;
   margin: 0 0 1em 0;
-  /* padding: 0 0 0 1em; */
 }
 @keyframes heroh1 {
   0% {
@@ -228,7 +229,10 @@ header div ul li a:hover {
 }
 /* ==================FEATURE============ */
 .feature {
-  padding: 10em 10em 10em 10em;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: visible;
+  padding: 10em 10em;
 }
 .feature .flex > div {
   padding: 0 70px;
@@ -417,6 +421,9 @@ footer p {
     display: none;
   }
   /* ==================HERO SECTION=========== */
+  .heroSection {
+    margin: 0 0 20em 0;
+  }
   .heroSection .flex {
     flex-direction: column;
     height: 100%;
@@ -429,11 +436,22 @@ footer p {
     width: 28em;
     height: 22em;
   }
+  .heroContent {
+    position: relative;
+  }
   .heroSection h1 {
     padding: 1em 0 0 0;
     text-align: center;
   }
+  .hero-button {
+    position: absolute;
+    top: 100%;
+    left: 31%;
+  }
   /* ========================FEATURE=============== */
+  .feature {
+    margin: 0 0 20em 0;
+  }
   .feature-content {
     width: 100%;
   }
@@ -505,7 +523,12 @@ footer p {
 }
 
 /* ======================================================================================================================================================================================== */
-
+@media (max-width: 1000px) {
+  .hero-button {
+    position: absolute;
+    left: 30%;
+  }
+}
 @media (max-width: 901px) {
   .headerflex {
     padding: 2em 6em 2em 5em;
@@ -520,6 +543,10 @@ footer p {
   .heroSection h1 {
     font-size: 36px;
     width: 80vw;
+  }
+  .hero-button {
+    position: absolute;
+    left: 35%;
   }
   /* ========================FEATURE=========== */
   .feature {
@@ -574,6 +601,10 @@ footer p {
     width: 80vw;
     height: 65vh;
   }
+  .hero-button {
+    position: absolute;
+    left: 34%;
+  }
   .feature .flex div:nth-child(1),
   .projects .flex div:nth-child(1) {
     padding: 0 5em;
@@ -587,6 +618,10 @@ footer p {
   .hero-img {
     width: 80vw;
     height: 60vh;
+  }
+  .hero-button {
+    position: absolute;
+    left: 32%;
   }
   .feature .flex div:nth-child(1),
   .projects .flex div:nth-child(1) {
@@ -602,6 +637,10 @@ footer p {
     width: 80vw;
     height: 55vh;
   }
+  .hero-button {
+    position: absolute;
+    left: 30%;
+  }
   .feature .flex div:nth-child(1),
   .projects .flex div:nth-child(1) {
     padding: 0 4em;
@@ -616,6 +655,10 @@ footer p {
     width: 80vw;
     height: 45vh;
   }
+  .hero-button {
+    position: absolute;
+    left: 28%;
+  }
   .feature .flex div:nth-child(1),
   .projects .flex div:nth-child(1) {
     padding: 0 3em;
@@ -629,6 +672,10 @@ footer p {
   .hero-img {
     width: 80vw;
     height: 35vh;
+  }
+  .hero-button {
+    position: absolute;
+    left: 26%;
   }
   .feature .flex div:nth-child(1),
   .projects .flex div:nth-child(1) {
@@ -649,6 +696,10 @@ footer p {
   .heroSection h1 {
     font-size: 32px;
     width: 90vw;
+  }
+  .hero-button {
+    position: absolute;
+    left: 18%;
   }
   /* ========================FEATURE=========== */
   .feature img {
