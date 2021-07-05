@@ -6,6 +6,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  user-select: none;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -17,13 +18,12 @@ body {
 .flex {
   align-items: center;
   display: flex;
-  justify-content: center;
 }
 .flex > * {
   flex: 1;
 }
 header {
-  animation: nav 0.5s ease;
+  animation: nav 0.8s ease;
 }
 .headerflex {
   align-items: center;
@@ -43,52 +43,42 @@ header button {
   display: none;
 }
 header h2,
-footer h2 {
+.footer h2 {
   color: #ff0a43;
 }
 header nav ul {
   padding: 0 0 0 3em;
 }
-header nav ul li {
-  display: inline-block;
-}
 header nav ul li a {
   color: #000;
+  font-size: 20px;
   font-weight: 500;
-  text-decoration: none;
   margin: 0 45px 0 0;
-  transition: color 0.3s ease 0s;
-}
-header nav ul li a:hover {
-  color: #00efff;
-  transition: color 0.3s ease 0s;
 }
 header div ul li {
   display: inline-block;
 }
+.headerflex div ul li a {
+  font-size: 24px;
+}
 header div ul li a {
   color: #000;
-  font-size: 20px;
   margin: 0 25px 0 0;
   text-decoration: none;
   transition: color 0.3s ease 0s;
 }
+header nav ul li a:hover,
 header div ul li a:hover {
   color: #00efff;
   transition: color 0.3s ease 0s;
 }
-/* ==============MOBILE MENU============ */
+/* ==============MOBILE MENU desktop============ */
 .hidden-menu {
   display: none;
 }
 .hidden-menu.show {
-  animation: down 0.3s ease;
-  background: linear-gradient(
-    170deg,
-    rgba(0, 240, 250, 1) 0%,
-    rgba(0, 255, 209, 1) 50%,
-    rgba(0, 240, 250, 1) 100%
-  );
+  animation: down 0.4s ease;
+  background-color: #00f5df;
   display: block;
   height: 40vh;
   padding: 2.5em 0 0 0;
@@ -119,10 +109,10 @@ header div ul li a:hover {
   padding: 1em 0 0 0;
 }
 .hidden-menu div ul li a {
-  font-size: 28px;
+  font-size: 30px;
 }
 .hidden-menu div ul li a:hover {
-  color: #ef00ff;
+  color: #ff0a43;
 }
 .hidden-menu nav ul li {
   margin-bottom: 20px;
@@ -133,7 +123,7 @@ header div ul li a:hover {
 .hidden-menu div ul li {
   display: inline-block;
 }
-/* =============HERO SECTION============== */
+/* =============HERO SECTION desktop============== */
 .heroSection {
   padding: 8em 15em 0em 15em;
   height: 100vh;
@@ -144,7 +134,7 @@ header div ul li a:hover {
   padding: 0 0 0 5em;
 }
 .heroContent h1 {
-  animation: heroh1 0.5s ease;
+  animation: heroh1 0.6s ease;
   letter-spacing: 1px;
   font-size: 36px;
   margin: 0 0 1em 0;
@@ -165,7 +155,7 @@ header div ul li a:hover {
   color: white;
   cursor: pointer;
   font-family: "Poppins", sans-serif;
-  font-size: 24px;
+  font-size: 22px;
   letter-spacing: 2px;
   outline: none;
   padding: 1em 2em;
@@ -214,7 +204,7 @@ header div ul li a:hover {
   }
 }
 .hero-img {
-  animation: hero 0.5s ease;
+  animation: hero 0.6s ease;
   width: 28em;
   height: 22em;
   padding: 0 1em 0 0;
@@ -227,7 +217,7 @@ header div ul li a:hover {
     transform: translateX(0%);
   }
 }
-/* ==================FEATURE============ */
+/* ==================FEATURE desktop============ */
 .feature {
   height: 100vh;
   max-height: 100vh;
@@ -242,25 +232,28 @@ header div ul li a:hover {
   width: 100%;
 }
 .feature h4 {
+  font-size: 18px;
   font-weight: 800;
   letter-spacing: 2px;
   margin: 0 0 -5px 0;
 }
 .feature h1 {
-  font-size: 26px;
+  font-size: 28px;
   font-weight: 600;
   letter-spacing: 1px;
   margin: 0 0 10px 0;
 }
 .feature p {
+  font-size: 16px;
   line-height: 26px;
+  opacity: 0.9;
 }
-/* ====================SKILL=========== */
+/* ====================SKILL desktop=========== */
 .skills {
   background: linear-gradient(
-    150deg,
-    rgba(0, 239, 255, 1) 0%,
-    rgba(235, 0, 255, 1) 100%
+    180deg,
+    rgba(0, 245, 223, 1) 0%,
+    rgba(253, 254, 203, 1) 100%
   );
   padding: 7em 14.4em;
 }
@@ -292,14 +285,15 @@ header div ul li a:hover {
   width: 3em;
 }
 .skill-box h1 {
-  font-size: 24px;
+  font-size: 28px;
   line-height: 24px;
   margin: 0 0 10px 0;
 }
 .skill-box p {
-  font-size: 14px;
+  font-size: 15px;
+  opacity: 0.9;
 }
-/* =====================PROJECTS======== */
+/* =====================PROJECTS desktop======== */
 .projects {
   padding: 10em 10em;
   width: 100vw;
@@ -318,64 +312,76 @@ header div ul li a:hover {
   margin: 0 0 50px 0;
 }
 .projects h4 {
+  font-size: 18px;
   font-weight: 800;
   letter-spacing: 2px;
   margin: 0 0 -2px 1px;
 }
 .projects h1 {
-  font-size: 26px;
+  font-size: 28px;
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 34px;
   margin: 0 0 10px 0;
 }
 .projects p {
-  line-height: 26px;
+  line-height: 24px;
+  opacity: 0.9;
 }
 .projects img {
   border-radius: 20px;
   width: 100%;
 }
-/* =====================FOOTER================ */
-footer {
-  background: linear-gradient(
-    160deg,
-    rgba(245, 255, 0, 1) 0%,
-    rgba(255, 0, 0, 1) 100%
-  );
-  width: 100%;
+/* ====================.footer desktop================ */
+.footer {
+  background: rgba(253, 254, 203, 1);
+  position: relative;
+  width: 100vw;
 }
-footer .flex {
-  align-items: center;
+.footer .flex {
+  padding: 7em 0 5em 0;
 }
-footer ul {
+.footer .footer-heading {
+  padding: 0 0 6.5em 0;
+}
+.footer .footer-content {
+  height: 100%;
+  justify-content: flex-start;
+  padding: 0 0 0 0;
+  text-align: left;
+}
+.footer ul {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   margin: 0 0 20px 0;
-  padding: 2.8em 7.1em 0 0;
+  padding: 0 0em 0 0;
 }
-footer ul li {
+.footer ul li {
   list-style: none;
 }
-footer ul li:nth-child(1) {
+.footer ul li:nth-child(1) {
   margin: 0 2em 0 0;
 }
-footer ul li a,
-footer p {
-  color: white;
-  text-align: right;
+.footer ul li a,
+.footer p {
+  color: black;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
 }
-footer ul li a {
-  font-size: 24px;
+.footer ul li a {
+  font-size: 26px;
 }
-footer ul li a:hover {
-  color: #f5ff00;
+.footer ul li a:hover {
+  color: #ff0a43;
+  transition: all 0.4s ease;
 }
-footer p {
+.footer p {
   font-size: 20px;
+  margin: 0 10px 10px 0;
 }
 /* ========================================================================================================================================================================================== */
-@media (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
   header nav ul li a {
     margin: 0 25px 0 0;
   }
@@ -385,7 +391,7 @@ footer p {
 }
 /* 
 ================================================================= */
-@media (max-width: 1100px) {
+@media only screen and (max-width: 1100px) {
   .flex {
     flex-direction: column;
     justify-content: center;
@@ -498,13 +504,10 @@ footer p {
     width: 100%;
   }
 }
-/* ============FOOTER=============== */
-footer {
-  padding: 5em 0em;
-}
-footer .flex > div {
+/* ===========.footer=============== */
+.footer .flex > div {
   justify-content: center;
-  width: 100vw;
+  width: 100%;
 }
 .footer-heading {
   display: flex;
@@ -512,13 +515,11 @@ footer .flex > div {
 .footer-content {
   display: flex;
   flex-direction: column;
-  padding: 3.5em 0 0 0;
 }
-footer ul {
+.footer ul {
   justify-content: center;
-  padding: 0;
 }
-footer p {
+.footer p {
   text-align: center;
 }
 
