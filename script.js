@@ -14,8 +14,10 @@ const scroll = new SmoothScroll('a[href*="#"]');
 const gmail = document.getElementById('gmail');
 const num = document.getElementById('num');
 
-gmail.addEventListener('click', function() {
+gmail.addEventListener('click', ()=> {
+    gmail.classList.add('active');
     copygmail();
+    setTimeout("gmail.classList.remove('active');",1000);
 });
 function copygmail(){
     const textarea = document.createElement('textarea');
@@ -28,8 +30,10 @@ function copygmail(){
     document.body.removeChild(textarea);
 };
 
-num.addEventListener('click', function() {
+num.addEventListener('click', ()=> {
+    num.classList.add('active');
     copynum();
+    setTimeout("num.classList.remove('active');", 1000);
 });
 function copynum(){
     const textarea = document.createElement('textarea');
