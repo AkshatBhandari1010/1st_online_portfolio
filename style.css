@@ -279,12 +279,6 @@ header div ul li a:hover {
   padding: 40px;
   text-align: center;
 }
-.c_and_java {
-  padding: 0 20px;
-}
-.c_and_java img:nth-child(1) {
-  margin-right: 25px;
-}
 .skill-box img {
   margin: 0 0 30px 0;
   width: 3em;
